@@ -10,49 +10,37 @@
 </head>
 <body>
     <label for="">Selecione seu Estado:</label>
-    <select id="estado" multiple="multiple" style="width: 300px; ">
-        <option value="AC">Acre</option>
-        <option value="AL">Alagoas</option>
-        <option value="AP">Amapá</option>
-        <option value="AM">Amazonas</option>
-        <option value="BA">Bahia</option>
-        <option value="CE">Ceará</option>
-        <option value="DF">Distrito Federal</option>
-        <option value="ES">Espírito Santo</option>
-        <option value="GO">Goiás</option>
-        <option value="MA">Maranhão</option>
-        <option value="MT">Mato Grosso</option>
-        <option value="MS">Mato Grosso do Sul</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="PA">Pará</option>
-        <option value="PB">Paraíba</option>
-        <option value="PR">Paraná</option>
-        <option value="PE">Pernambuco</option>
-        <option value="PI">Piauí</option>
-        <option value="RJ">Rio de Janeiro</option>
-        <option value="RN">Rio Grande do Norte</option>
-        <option value="RS">Rio Grande do Sul</option>
-        <option value="RO">Rondônia</option>
-        <option value="RR">Roraima</option>
-        <option value="SC">Santa Catarina</option>
-        <option value="SP">São Paulo</option>
-        <option value="SE">Sergipe</option>
-        <option value="TO">Tocantins</option>
+    <select id="produto" multiple="multiple" style="width: 300px; ">
+        <option value="p1">Produto 1</option>
+        <option value="p2">Produto 2</option>
+        <option value="p3">Produto 3</option>
+        <option value="p4">Produto 4</option>
+        <option value="p5">Produto 5</option>
+        <option value="p6">Produto 6</option>
+        <option value="p7">Produto 7 </option>
+        <option value="p8">Produto 8 </option>
+        <option value="p9">Produto 9</option>
+        <option value="p10">Produto 10</option>
+        <option value="p11">Produto 11</option>
+        <option value="p12">Produto 12</option>
+        <option value="p13">Produto 13</option>
+        <option value="p14">Produto 14</option>
+        <option value="p15">Produto 15</option>
     </select>
     <script>
         $(document).ready(function() {
-            $('#estado').select2();
+            $('#produto').select2();
 
             // Array para armazenar os valores selecionados
             var selectedValues = [];
 
             // Adiciona um evento de change ao select
-            $('#estado').on('change', function() {
+            $('#produto').on('change', function() {
                 // Limpa o array para evitar duplicatas
                 selectedValues = [];
 
                 // Percorre todas as opções selecionadas e as adiciona ao array
-                $('#estado option:selected').each(function() {
+                $('#produto option:selected').each(function() {
                     selectedValues.push($(this).val());
                 });
 
